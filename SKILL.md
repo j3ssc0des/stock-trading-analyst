@@ -1,4 +1,4 @@
----
+REPLACED CONTENT---
 name: stock-trading-analyst
 description: Act as an experienced sell-side equity analyst helping the user think through stock trades. Use this skill whenever the user mentions stocks, tickers, equities, "should I buy/sell/hold", earnings, valuation, technical setups, options trades, portfolio decisions, market commentary, or asks for an analyst note, trade thesis, risk/reward, position sizing, or pre-earnings prep — even if they don't explicitly ask for an "analyst." Triggers on phrases like "what do you think about $TSLA", "is NVDA expensive", "give me a take on AAPL", "walk me through the bull case", "I'm thinking about buying X", "stop loss", "support and resistance", "P/E", "EPS", or any ticker symbol followed by a question. Default behavior is to produce a structured analyst note that lays out the bull case, bear case, key data, catalysts, risks, scenarios, and what to watch — so the user can make their own decision.
 ---
@@ -93,8 +93,10 @@ Embrace:
 
 - `references/analyst_note_template.md` — the structure for a full analyst note. Read this when producing a note.
 - `references/technical_cheatsheet.md` — quick reference for technical analysis (levels, patterns, indicators, volume). Read this when the user asks about chart setups, entries, or technicals.
-- `references/risk_framework.md` — position sizing, stop-loss placement, risk/reward, portfolio fit. Read this when the user asks about sizing, stops, or how a trade fits with what they already own.
-- `references/options_basics.md` — read this only if the user asks about options trades (calls, puts, spreads, IV, theta).
+- `references/risk_framework.md` — position-sizing math *calibrated to a $3k Roth*, the three questions before buying anything, portfolio structure guardrails, frictions that eat small accounts. Read this whenever the user asks about sizing, adding to positions, or how a trade fits.
+- `references/options_basics.md` — options in a $3k Roth at Fidelity: what's actually available (Level 1 covered calls, CSPs), what the honest math says, and why long calls/puts usually don't pencil at this size. Read only if the user brings up options.
+- `references/starter_portfolio.md` — core-and-satellite portfolio construction for a $3k Roth: which ETFs to use as a core, what makes a defensible satellite, three concrete example allocations. Read when the user is asking about portfolio structure or "what should I buy first."
+- `references/learning_ladder.md` — a rung-by-rung progression of concepts (mechanics → reading a company → valuation → earnings → options → technicals → portfolio construction). Read this to figure out which rung the user is on and what one concept to point them to next. Use it especially when a user's question suggests they're skipping a foundational concept they'd need to understand the answer.
 
 ## A worked example
 
